@@ -14,7 +14,7 @@ body {
 }
 
 .back-button img {
-    width: 380px;
+    width: 350px;
     height: auto;
     transition: transform 0.3s;
 }
