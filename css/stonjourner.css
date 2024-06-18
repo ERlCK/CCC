@@ -1,32 +1,48 @@
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4e5a8;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
 .back-button {
     position: fixed;
-    bottom: 20px; /* Distância do bottom */
-    right: 20px; /* Distância da esquerda */
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Certifica-se de que o botão esteja acima de outros elementos */
 }
 
 .back-button img {
-    width: 600px; /* Altere o tamanho conforme necessário */
-    height: 184px; /* Altere o tamanho conforme necessário */
-    transition: transform 0.3s; /* Adiciona uma transição suave */
+    width: 380px;
+    height: auto;
+    transition: transform 0.3s;
 }
 
 .back-button:hover img {
-    transform: scale(1.1); /* Aumenta em 10% */
+    transform: scale(1.1);
 }
 
 .pokemon-info {
     display: flex;
+    flex-direction: column; /* Alinha o texto abaixo da imagem */
     align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 70px; /* Espaço para o botão de voltar */
 }
 
 .pokemon-info img {
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.pokemon-info img:hover {
+    transform: scale(1.1);
 }
 
 .pokemon-info p {
-    font-size: 30px; /* Tamanho do texto */
+    font-size: 18px;
+    text-align: center; /* Centraliza o texto */
 }
