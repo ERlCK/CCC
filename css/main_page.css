@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4e5a8;
+}
+
+.text-area {
+    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px 100px; /* 20px de espaço vertical, 100px de espaço horizontal */
+}
+
+.image-grid img {
+    width: 300px; /* Largura fixa para as imagens */
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}

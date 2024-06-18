@@ -1,0 +1,32 @@
+body {
+    background-color: #f4e5a8;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px; /* Distância do bottom */
+    right: 20px; /* Distância da esquerda */
+}
+
+.back-button img {
+    width: 600px; /* Altere o tamanho conforme necessário */
+    height: 184px; /* Altere o tamanho conforme necessário */
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+.back-button:hover img {
+    transform: scale(1.1); /* Aumenta em 10% */
+}
+
+.pokemon-info {
+    display: flex;
+    align-items: center;
+}
+
+.pokemon-info img {
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.pokemon-info p {
+    font-size: 30px; /* Tamanho do texto */
+}
